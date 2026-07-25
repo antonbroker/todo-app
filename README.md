@@ -2,6 +2,8 @@
 
 A simple Task Manager application built with Laravel 13, MySQL, Bootstrap, jQuery, and AJAX.
 
+Repository: https://github.com/antonbroker/todo-app
+
 ## Features
 
 - View all tasks
@@ -12,7 +14,7 @@ A simple Task Manager application built with Laravel 13, MySQL, Bootstrap, jQuer
 
 ## Tech Stack
 
-- PHP 8.4
+- PHP 8.3+
 - Laravel 13
 - MySQL
 - Bootstrap
@@ -22,13 +24,8 @@ A simple Task Manager application built with Laravel 13, MySQL, Bootstrap, jQuer
 ## Project Structure
 
 ```
-Controller
-    ↓
-TaskService
-    ↓
-Eloquent Model
-    ↓
-MySQL
+Controller -> TaskService -> Eloquent Model -> MySQL
+
 ```
 
 Business logic is separated into a dedicated service layer.
@@ -38,8 +35,8 @@ Business logic is separated into a dedicated service layer.
 ### Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/antonbroker/todo-app.git
+cd todo-app
 ```
 
 ### Install dependencies
@@ -47,7 +44,7 @@ cd <repository-name>
 ```bash
 composer install
 ```
-
+Frontend libraries are loaded through CDN, so no Node.js or npm installation is required.
 ### Create environment file
 
 ```bash
